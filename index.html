@@ -36,38 +36,59 @@ body {
   background-color: #000000;
   padding: 20px 10px;
 }
-
+font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000;
+  color: white
+       }
+  .center {
+    text-align: center;
+  }
+  
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ .navbar {
+  margin: 0;
+   overflow: hidden;
+  background-color: #333;  
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+  
+.header {
+  overflow: hidden;
+  background-color: #000000;
+  padding: 20px 10px;
+}
 .header a {
   margin: 0;
   float: left;
   color: white;
   text-align: center;
-  padding: 20px 10px;
+  padding: 12px;
   text-decoration: none;
   font-size: 18px; 
   line-height: 25px;
   border-radius: 4px;
 }
-
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
 }
-
 .header a:hover {
   background-color: #4C4C4C;
   color: white;
 }
-
 .header a.active {
   background-color: #1cc0e6;
   color: white;
 }
-
 .header-right {
   float: right;
 }
-
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
@@ -188,7 +209,7 @@ img {
     
 <div class="header">
   <a href="index.html"> <img src="Images/bd500.png" style="width:75px;height:75px"></a>
- <p style="font-size:25px">Novelty T-Shirts by Browner Designs</p>
+ <p style="font-size:18">Novelty T-Shirts by Browner Designs</p>
   <div class="header-right">
     <a class="active" href="index.html">Home</a>
     <a href="designs.html">Our Designs</a>
