@@ -1,116 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About Ryan Brown | Browner Designs</title>
-<meta name="description" content="Meet Ryan Brown, founder of Browner Designs — a Clemson-educated former teacher turned website, app, and e-learning designer based in South Carolina.">
-<link rel="canonical" href="https://www.brownerdesigns.com/about">
+# Browner Designs — new site
 
-<meta property="og:type" content="profile">
-<meta property="og:site_name" content="Browner Designs">
-<meta property="og:title" content="About Ryan Brown | Browner Designs">
-<meta property="og:description" content="A Clemson-educated former teacher turned website, app, and e-learning designer based in South Carolina.">
-<meta property="og:url" content="https://www.brownerdesigns.com/about">
-<meta property="og:image" content="https://www.brownerdesigns.com/Images/brownerdesigns4500cropped.png">
-<meta name="twitter:card" content="summary_large_image">
+## What changed
+- **No more inline styles.** Everything now lives in `/css/style.css`, one stylesheet shared across all pages.
+- **One JS file**, `/js/main.js`, handles the mobile menu and the contact form.
+- **Content now centers on your three services** — website design, app design, e-learning design — instead of the Etsy t-shirt shop, which has been removed per your instructions.
+- **Portfolio folded into the Services page** (`designs.html`) instead of a separate page, per your instructions. It currently features:
+  - This website itself, as a live web-design example
+  - The sample acknowledgement e-learning module
+  - An honest "currently taking app design projects" placeholder (since there's no app case study yet)
+- **Contact page** now has a real working form (Website field: project type, budget, message) wired up for **Netlify Forms** — free, no backend needed since you're already on Netlify.
+- **SEO basics added to every page:** unique title + meta description, canonical URL, Open Graph/Twitter tags, semantic HTML (`header`/`main`/`section`/`footer`, one `h1` per page), alt text on every image, `sitemap.xml`, `robots.txt`, and structured data (JSON-LD) describing the business and services.
+- Same file names as before — `index.html`, `about.html`, `contact.html`, `designs.html`, `resume.html` — nothing renamed.
 
-<link rel="icon" href="/Images/bd500.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Caveat:wght@500;600&display=swap">
-<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+## Before you deploy — please check these
 
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/">
-      <img src="/Images/bd500.png" alt="Browner Designs icon">
-      <span class="brand-name">Browner <span>Designs</span></span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-      <span></span>
-    </button>
-    <nav class="main-nav" aria-label="Primary">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/designs">Services &amp; Work</a></li>
-        <li><a href="/about" aria-current="page">About</a></li>
-        <li><a href="/resume">Resume</a></li>
-        <li><a href="/contact" class="btn">Start a Project</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+1. **Email address:** set to `contactbrownerdesigns@gmail.com` on the Contact page.
+2. **Netlify Forms setup:** the form will start working automatically on your next deploy — Netlify scans the built HTML for `data-netlify="true"` forms. After deploying, go to your Netlify site dashboard → **Forms** to see submissions, and turn on email notifications under **Forms → Settings → Form notifications** so you don't have to check the dashboard manually.
+3. **Image with spaces in the filename:** `Images/Ryan Brown 2019-6158re.jpg` and `Documents/Ryan Brown's Resume 032422.pdf` have spaces (and an apostrophe) in their names. Browsers generally handle this fine, but if you ever run into a broken link/image, the safest fix is renaming the files to remove spaces/apostrophes (e.g. `ryan-brown-2019.jpg`, `ryan-brown-resume.pdf`) and updating the two `src`/`href` references in `about.html` and `resume.html` to match.
+4. **`Sample_Acknowledgement` link casing:** your folder is named `Sample_Acknowledgement`, but the old live link used lowercase `sample_acknowledgement`. I linked to `/Sample_Acknowledgement/story` (matching your actual folder name) in `designs.html` — double check that resolves correctly after deploy; if not, switch it to lowercase to match whatever your old link used.
+5. **Address for local SEO:** I left the business address general (South Carolina, no city) since I don't have your exact city. If you want stronger local search results, consider adding a city/zip to the structured data in `index.html` and setting up a free Google Business Profile.
 
-<main>
-
-  <section class="page-head">
-    <div class="wrap">
-      <span class="eyebrow">About</span>
-      <h1>From the classroom to the screen.</h1>
-      <p class="lede">Same goal either way: take something complicated and make it make sense.</p>
-    </div>
-  </section>
-
-  <section aria-labelledby="bio-h">
-    <div class="wrap split">
-      <div>
-        <img class="portrait" src="/Images/Ryan Brown 2019-6158re.jpg" alt="Portrait of Ryan Brown, founder of Browner Designs">
-        <div class="stat-row">
-          <div class="stat"><b>B.S.</b><span>Secondary Ed. — Biological Sciences, Clemson</span></div>
-        </div>
-      </div>
-      <div>
-        <h2 id="bio-h">Hi, I'm Ryan.</h2>
-        <p>I have a Bachelor of Science in Secondary Education: Biological Sciences from Clemson University. I started out teaching — standing in front of a classroom and figuring out, day after day, how to explain things clearly enough that they'd actually stick.</p>
-        <p>That turned into a career in instructional design and e-learning, and eventually into Browner Designs: a small design studio built around the same core skill. Whether I'm laying out a homepage, mapping an app's onboarding flow, or storyboarding a training course, I'm asking the same question I asked as a teacher — will this actually make sense to the person on the other end?</p>
-        <p>I'm passionate about style, creativity, gaming, and technology, and I like combining all of it with a genuine design and education background. All designs are created in-house, by me, in the U.S.A.</p>
-        <p>Outside of client work, you'll usually find me experimenting with new design tools or playing through whatever game inspired my last project idea.</p>
-        <div class="pill-list">
-          <span class="pill">Website Design</span>
-          <span class="pill">App Design</span>
-          <span class="pill">E-Learning Design</span>
-          <span class="pill">Instructional Design</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="-alt" aria-labelledby="cta-h">
-    <div class="wrap">
-      <div class="cta-banner">
-        <div>
-          <h2 id="cta-h">Want to work together?</h2>
-          <p>I'd love to hear what you're building — reach out and let's talk it through.</p>
-        </div>
-        <a href="/contact" class="btn">Get in touch</a>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-brand">
-      <img src="/Images/bd500.png" alt="Browner Designs icon">
-      <span>Browner Designs</span>
-    </div>
-    <nav class="footer-nav" aria-label="Footer">
-      <a href="/">Home</a>
-      <a href="/designs">Services &amp; Work</a>
-      <a href="/about">About</a>
-      <a href="/resume">Resume</a>
-      <a href="/contact">Contact</a>
-      <a href="https://www.linkedin.com/in/ryanbrown2007/">LinkedIn</a>
-    </nav>
-    <p class="footer-meta">© <span id="year">2026</span> Browner Designs LLC · South Carolina · All designs created in-house in the U.S.A.</p>
-  </div>
-</footer>
-
-<script src="/js/main.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+## How to deploy
+1. Drop these files into your existing GitHub repo, replacing the old `about.html`, `contact.html`, `designs.html`, `index.html`, `resume.html`, and adding the new `css/`, `js/`, `sitemap.xml`, `robots.txt`.
+2. Keep your existing `Documents/`, `Images/`, and `Sample_Acknowledgement/` folders exactly where they are — nothing needs to move.
+3. Commit and push — Netlify will auto-deploy like before.
+4. After it's live, submit `https://www.brownerdesigns.com/sitemap.xml` to Google Search Console for faster indexing.
