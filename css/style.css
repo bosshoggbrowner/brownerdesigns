@@ -475,6 +475,14 @@ section{ padding: 72px 0; }
 .footer-nav a{ text-decoration: none; color: var(--ink-soft); font-size: .92rem; }
 .footer-nav a:hover{ color: var(--ink); }
 .footer-meta{ font-size: .82rem; color: var(--ink-soft); margin-top: 18px; width: 100%; }
+.photo-credit{
+  font-size: .72rem;
+  color: var(--ink-soft);
+  opacity: .65;
+  margin-top: 6px;
+  width: 100%;
+}
+.photo-credit a{ color: inherit; text-decoration: underline; }
 
 /* ---- Misc page header (non-hero pages) ---- */
 .page-head{
