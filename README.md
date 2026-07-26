@@ -12,6 +12,9 @@
 - **SEO basics added to every page:** unique title + meta description, canonical URL, Open Graph/Twitter tags, semantic HTML (`header`/`main`/`section`/`footer`, one `h1` per page), alt text on every image, `sitemap.xml`, `robots.txt`, and structured data (JSON-LD) describing the business and services.
 - Same file names as before — `index.html`, `about.html`, `contact.html`, `designs.html`, `resume.html` — nothing renamed.
 
+## Resume PDF
+The resume has been rewritten with a technology/design/L&D focus and re-exported as `Documents/Ryan-Brown-Resume.pdf` (renamed, no spaces/apostrophe this time — see note below). The Resume page's download button now points to this new file. When you upload, you can delete the old `Documents/Ryan Brown's Resume 032422.pdf` from the repo since it's replaced.
+
 ## Before you deploy — please check these
 
 1. **Email address:** set to `contactbrownerdesigns@gmail.com` on the Contact page.

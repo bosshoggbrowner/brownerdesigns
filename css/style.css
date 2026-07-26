@@ -180,6 +180,14 @@ button{ font-family: inherit; }
 }
 .main-nav .btn{ margin-left: 4px; }
 
+/* Force the nav's button link to keep white text on its dark background,
+   overriding the plain nav-link color rules above */
+.main-nav a.btn,
+.main-nav a.btn:hover,
+.main-nav a.btn[aria-current="page"]{
+  color: var(--paper);
+}
+
 @media (max-width: 780px){
   .nav-toggle{ display: inline-flex; align-items: center; justify-content: center; }
   .main-nav{
