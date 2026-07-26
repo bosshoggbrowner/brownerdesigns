@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services &amp; Work | Browner Designs</title>
+<meta name="description" content="Website design, app design, and e-learning design services from Browner Designs. See the process, what's included, and a live example of the work.">
+<link rel="canonical" href="https://www.brownerdesigns.com/designs">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Browner Designs">
+<meta property="og:title" content="Services & Work | Browner Designs">
+<meta property="og:description" content="Website design, app design, and e-learning design — what's included, and a live example of the work.">
+<meta property="og:url" content="https://www.brownerdesigns.com/designs">
+<meta property="og:image" content="https://www.brownerdesigns.com/Images/brownerdesigns4500cropped.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/Images/bd500.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Caveat:wght@500;600&display=swap">
+<link rel="stylesheet" href="/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Website, App, and E-Learning Design",
+  "provider": { "@type": "ProfessionalService", "name": "Browner Designs" },
+  "areaServed": "US",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Design Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Design" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "App Design" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-Learning Design" } }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">
+      <img src="/Images/bd500.png" alt="Browner Designs icon">
+      <span class="brand-name">Browner <span>Designs</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/designs" aria-current="page">Services &amp; Work</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/resume">Resume</a></li>
+        <li><a href="/contact" class="btn">Start a Project</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Services &amp; Work</span>
+      <h1>Three services. One way of thinking about all of them.</h1>
+      <p class="lede">Every project starts with the same question: what does the person on the other end need to understand, and what's the clearest way to get them there?</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="services-h">
+    <div class="wrap">
+      <h2 id="services-h" class="visually-hidden">Services</h2>
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="mark">01</div>
+          <h3>Website Design</h3>
+          <p>A site that loads fast, reads clearly, and tells people exactly what you do and how to reach you.</p>
+          <ul>
+            <li>Custom design — no generic templates</li>
+            <li>Hand-coded HTML/CSS, no page-builder bloat</li>
+            <li>Mobile-first &amp; fully responsive</li>
+            <li>Built with SEO fundamentals from the start</li>
+            <li>You own the code, no lock-in</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <div class="mark">02</div>
+          <h3>App Design</h3>
+          <p>Screens and flows for web or mobile apps, mapped around what a user is actually trying to get done.</p>
+          <ul>
+            <li>User flows &amp; wireframes</li>
+            <li>Visual UI design</li>
+            <li>Clickable prototypes for testing &amp; feedback</li>
+            <li>Onboarding &amp; first-run experience</li>
+            <li>Lightweight design systems</li>
+          </ul>
+        </article>
+        <article class="service-card">
+          <div class="mark">03</div>
+          <h3>E-Learning Design</h3>
+          <p>Courses and training modules grounded in actual instructional design — built to teach, not just play a slideshow.</p>
+          <ul>
+            <li>Learning objectives &amp; course structure</li>
+            <li>Storyboarding &amp; scripting</li>
+            <li>Interactive scenarios &amp; knowledge checks</li>
+            <li>Built in Rise, Storyline, or plain web</li>
+            <li>Onboarding &amp; compliance training</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="-alt" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Featured Work</span>
+        <h2 id="work-h">A couple of things worth pointing at.</h2>
+        <p>Browner Designs is a growing studio — here's real, live proof of the work rather than stock mockups.</p>
+      </div>
+
+      <div class="work-item">
+        <div>
+          <span class="tag">Website Design</span>
+          <h3>The site you're looking at right now</h3>
+          <p>This entire site — brownerdesigns.com — is a hand-built example of the web design work: semantic HTML, one lightweight stylesheet, no page builder, and structure written with SEO and accessibility in mind from the ground up.</p>
+          <a href="/contact" class="btn -ghost">Get one like it</a>
+        </div>
+        <figure>
+          <img src="/Images/brownerdesigns4500cropped.png" alt="Browner Designs logo, representing this website's design">
+        </figure>
+      </div>
+
+      <div class="work-item">
+        <div>
+          <span class="tag">E-Learning Design</span>
+          <h3>Sample acknowledgement module</h3>
+          <p>A short interactive e-learning module built to walk a learner through an acknowledgement/sign-off flow — a common pattern in onboarding and compliance training.</p>
+          <a href="/Sample_Acknowledgement/story" class="btn -ghost">View live sample</a>
+        </div>
+        <figure>
+          <img src="/Images/sampleacknowledgement.png" alt="Screenshot preview of the sample e-learning acknowledgement module">
+        </figure>
+      </div>
+
+      <div class="work-item">
+        <div>
+          <span class="tag">App Design</span>
+          <h3>Currently taking on app design projects</h3>
+          <div class="work-placeholder">
+            <p class="mb-0">App design is one of the newer offerings here, and I'm currently looking for the right project to build the first public case study with. If you've got an app that needs a clear, well-designed interface, let's talk — early clients get extra attention.</p>
+          </div>
+          <a href="/contact" class="btn -ghost">Discuss an app project</a>
+        </div>
+        <figure>
+          <img class="icon-pad" src="/Images/bd500.png" alt="Browner Designs icon">
+        </figure>
+      </div>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="cta-h">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div>
+          <h2 id="cta-h">Ready to start?</h2>
+          <p>Tell me about your website, app, or e-learning project and I'll follow up within a couple of business days.</p>
+        </div>
+        <a href="/contact" class="btn">Start a project</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <img src="/Images/bd500.png" alt="Browner Designs icon">
+      <span>Browner Designs</span>
+    </div>
+    <nav class="footer-nav" aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/designs">Services &amp; Work</a>
+      <a href="/about">About</a>
+      <a href="/resume">Resume</a>
+      <a href="/contact">Contact</a>
+      <a href="https://www.linkedin.com/in/ryanbrown2007/">LinkedIn</a>
+    </nav>
+    <p class="footer-meta">© <span id="year">2026</span> Browner Designs LLC · South Carolina · All designs created in-house in the U.S.A.</p>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
