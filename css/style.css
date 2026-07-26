@@ -481,6 +481,17 @@ section{ padding: 72px 0; }
   padding: 60px 0 20px;
   border-bottom: 1px solid var(--line);
 }
+.page-icon{
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: var(--gold-tint);
+  color: var(--gold-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
 .page-head h1{ font-size: clamp(1.9rem, 3.6vw, 2.6rem); max-width: 20ch; }
 .page-head .lede{ font-size: 1.08rem; max-width: 60ch; }
 
